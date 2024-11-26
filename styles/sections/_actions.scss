@@ -1,0 +1,49 @@
+.actions {
+  margin-bottom: 115px;
+
+  &__wrapper {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      max-width: 457px;
+    }
+
+    h2 {
+      margin-bottom: 17px;
+      font-weight: 700;
+      line-height: 126%;
+      color: #455a64;
+    }
+
+    p {
+      font-weight: 500;
+      line-height: 148%;
+      letter-spacing: 0.03em;
+      color: #535359;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      gap: 20px;
+
+      img {
+        max-width: 50%;
+      }
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      flex-wrap: wrap-reverse;
+      gap: 20px;
+
+      img {
+        max-width: 85%;
+      }
+    }
+  }
+}

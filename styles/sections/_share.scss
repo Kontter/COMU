@@ -1,0 +1,86 @@
+.share {
+  margin-bottom: 108px;
+
+  header {
+    margin-bottom: 56px;
+
+    p {
+      max-width: 601px;
+      margin-inline: auto;
+      font-family: var(--second-family);
+      font-weight: 500;
+      line-height: 148%;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: #393939;
+    }
+  }
+
+  h2  {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+  }
+
+  img {
+    margin-inline: auto;
+  }
+
+  a {
+    user-select: none;
+    position: relative;
+    display: block;
+    border: 2px solid transparent;
+    width: fit-content;
+    margin: -30px auto 25px;
+    padding: 10px 32px;
+    border-radius: 8px;
+    background: #fe9563;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147%;
+    color: #fff;
+    outline-offset: 5px;
+
+    &:focus-visible {
+      border: 2px solid #fe9868;
+      background: transparent;
+      color: #000;
+    }
+
+    @include hover {
+      border: 2px solid #fe9868;
+      background: transparent;
+      color: #000;
+    }
+  }
+
+  &__bottom {
+    font-family: var(--second-family);
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 147%;
+    color: #000;
+
+    span {
+      display: inline-block;
+      width: 2px;
+      height: 15px;
+      background: #000;
+      transform: translateY(3px);
+    }
+  }
+
+  @include tablet {
+    header {
+      margin-bottom: 20px;
+    }
+
+    a {
+      margin-block: 15px;
+    }
+  }
+}

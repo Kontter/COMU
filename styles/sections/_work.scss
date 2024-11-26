@@ -1,0 +1,124 @@
+.work {
+  margin-bottom: 115px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 116px 113px 146px 88px;
+    border-radius: 49px;
+    box-shadow: 6px 6px 29px 0 #dd8762;
+    background: linear-gradient(314deg, #f5f2eb 0%, #f7e6cb 100%);
+  }
+
+  &__infoBlock {
+    max-width: 459px;
+    padding-top: 80px;
+
+    header {
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-weight: 700;
+      line-height: 126%;
+      color: #000;
+    }
+
+    p {
+      max-width: 395px;
+      margin-bottom: 19px;
+      font-family: var(--second-family);
+      font-weight: 500;
+      line-height: 148%;
+      letter-spacing: 0.03em;
+      color: #393939;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 299px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 13px 0 17px 16px;
+      border-radius: 13px;
+      box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.09);
+      background: #fff;
+
+      div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        width: 33px;
+        height: 33px;
+        background: #fe9563;
+      }
+
+      p:nth-child(1) {
+        margin-bottom: 0;
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 153%;
+        color: #000;
+      }
+
+      p:nth-child(2) {
+        margin-bottom: 0;
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 153%;
+        color: #000;
+      }
+    }
+  }
+
+  @include deskstop {
+    &__wrapper {
+      padding: 55px 50px 70px 44px;
+    }
+  }
+
+  @include tablet {
+    &__img {
+      max-width: 50%;
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px 30px 20px;
+    }
+
+    &__img {
+      max-width: 80%;
+    }
+
+    &__infoBlock {
+      padding-top: 0;
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        margin-inline: auto;
+      }
+    }
+
+    &__list {
+      margin-inline: auto;
+    }
+  }
+}

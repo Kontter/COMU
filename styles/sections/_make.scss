@@ -1,0 +1,134 @@
+.make {
+  margin-bottom: 79px;
+
+  &__wrapper {
+    display: flex;
+    gap: 114px;
+    justify-content: center;
+
+    div {
+      max-width: 449px;
+      padding-top: 102px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
+    h2 {
+      font-weight: 700;
+      line-height: 126%;
+      color: #353642;
+    }
+
+    p {
+      font-family: var(--second-family);
+      font-weight: 500;
+      line-height: 148%;
+      letter-spacing: 0.03em;
+      color: #393939;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__link1 {
+    user-select: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 10px 27px;
+    background: #fe9868;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147%;
+    color: #f3fcff;
+    outline-offset: 5px;
+
+    &:focus-visible {
+      border: 2px solid #fe9868;
+      background: transparent;
+      color: #000;
+      outline-offset: 5px;
+    }
+
+    @include hover {
+    border: 2px solid #fe9868;
+    background: transparent;
+    color: #000;
+    }
+  }
+
+  &__link2 {
+    user-select: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid #fe9868;
+    padding: 10px 27px;
+    background: transparent;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 147%;
+    color: #000;
+    outline-offset: 5px;
+
+    &:focus-visible {
+      border: 2px solid #fe9868;
+      background: #fe9868;
+      color: #f3fcff;
+      outline-offset: 5px;
+    }
+
+    @include hover {
+      border: 2px solid #fe9868;
+      background: #fe9868;
+      color: #f3fcff;
+    }
+  }
+
+  @include deskstop {
+    img {
+      max-width: 40%;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      gap: 50px;
+      align-items: center;
+
+      div {
+        padding-top: 0;
+      }
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include mobile-s {
+    &__wrapper {
+      div {
+        gap: 18px;
+      }
+    }
+
+    ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  }
+}

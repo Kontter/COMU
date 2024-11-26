@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include fluid-text(14, 16);
+
+  font-family: var(--font-family);
+  background-color: #fffcf5;
+
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  @include fluid-text(24, 42);
+}
+
+h2 {
+  @include fluid-text(24, 42);
+}
+
+h3 {
+  @include fluid-text(17, 17);
+}
+
+
+
+
+
+
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: .3s;
+}
+
+a,
+button,
+input,
+textarea {
+  cursor: pointer;
+}
+
+button {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

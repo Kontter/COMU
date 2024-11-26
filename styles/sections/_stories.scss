@@ -1,0 +1,35 @@
+.stories {
+  margin-bottom: 120px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 20px 46px;
+    border-radius: 44px;
+    box-shadow: 6px 6px 29px 0 #dd8762;
+    background: linear-gradient(135deg, #f7e6cb 0%, #f5f2eb 100%);
+  }
+
+  header {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #000;
+  }
+
+  p {
+    max-width: 625px;
+    margin-bottom: 25px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    line-height: 148%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #393939;
+  }
+}

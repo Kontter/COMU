@@ -1,0 +1,29 @@
+@import 
+  '_fonts.scss',
+  'mixins',
+  '_media.scss',
+  '_globals.scss',
+  '_classes.scss',
+  '_variables.scss',
+  '_burger.scss';
+
+@import
+  'sections/header',
+  'sections/hero',
+  'sections/peculiarities',
+  'sections/actions',
+  'sections/opportunity',
+  'sections/security',
+  'sections/work',
+  'sections/make',
+  'sections/better',
+  'sections/keep',
+  'sections/share',
+  'sections/stories',
+  'sections/collection',
+  'sections/productivity',
+  'sections/already',
+  'sections/faq',
+  'sections/questionForm',
+  'sections/unlimited',
+  'sections/footer';

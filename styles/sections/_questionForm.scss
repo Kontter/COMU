@@ -1,0 +1,81 @@
+.questionForm {
+  margin-bottom: 93px;
+
+  header {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: 700;
+    line-height: 147%;
+    color: #000;
+  }
+
+  &__wrapper {
+    max-width: 1041px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+  }
+
+  input {
+    border: 0.50px solid #fe9563;
+    background: #fff;
+    width: 100%;
+    border-radius: 16px 0 0 16px;
+    padding: 20px 27px;
+    outline-offset: 5px;
+
+    &::placeholder {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 147%;
+      letter-spacing: 0.03em;
+      color: #8f8f8f;
+    }
+  }
+
+  button {
+    padding: 17px 68px;
+    background: #fe9563;
+    border-radius: 0 8px 8px 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 147%;
+    color: #fff;
+    border: none;
+    outline-offset: 5px;
+
+    &:focus-visible {
+      background: transparent;
+      color: #000;
+      border: 1px solid #fe9868;
+      border-left: 0px;
+    }
+
+    @include hover {
+      background: transparent;
+      color: #000;
+      border: 1px solid #fe9868;
+      border-left: 0px;
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input {
+      border-radius: 16px;
+    }
+
+    button {
+      border-radius: 8px;
+    }
+  }
+}

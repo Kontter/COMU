@@ -1,0 +1,21 @@
+.productivity {
+  h2 {
+    max-width: 641px;
+    margin: 0 auto 52px;
+    font-weight: 700;
+    line-height: 126%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #2e2e2e;
+  }
+
+  img {
+    margin-inline: auto;
+  }
+
+  @include tablet {
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+}
